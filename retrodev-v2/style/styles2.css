@@ -1,0 +1,581 @@
+/* CSS reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* Création des variables du site (couleurs,...) */
+:root {
+    --retrodev-color1: #028090;
+    --retrodev-color2: #fcba04;
+    --retrodev-color3: #343434;
+    --retrodev-color4: #f7fff7;
+}
+
+/* Animation background du site */
+  body {
+    background: linear-gradient(135deg, var(--retrodev-color1), var(--retrodev-color4), var(--retrodev-color2));
+    background-size: 300% 900%;
+    animation: gradient 30s ease infinite;
+    height: 100vh;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+    font-size: 1rem;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0%;
+    }
+    100% {
+      background-position: 100%;
+    }
+  }
+  
+
+/* Mise en place des polices */
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-VariableFont_wght.ttf), format('.ttf');
+}
+
+@font-face {
+  font-family: RetroGaming;
+  src: url(../font/Retro_Gaming.ttf);
+}
+
+/* Règles générales */
+html {
+  cursor: crosshair;
+}
+
+h1, h2, h3 {
+  font-family: RetroGaming, sans-serif;
+  color: #000;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 2.2rem;
+}
+
+h1 {
+  font-size: 2.625rem;
+}
+
+h2 {
+  font-size: 1.375rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+}
+
+p {
+  text-align: justify;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+p a {
+  text-decoration: underline;
+}
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.orange {
+  color: var(--retrodev-color2);
+}
+
+.blue {
+  color: var(--retrodev-color1);
+}
+
+.btn-site {
+  font-family: RetroGaming, sans-serif;
+  color: #000;
+  margin-bottom: 1rem;
+  background-color: var(--retrodev-color2);
+}
+
+.btn-site:hover {
+  background-color: #dba203;
+  color: var(--retrodev-color4);
+}
+
+#onglet-actif {
+  background-color: rgba(0, 0, 0, 0);
+  color: #000;
+}
+
+#onglet-actif a {
+  color: #000;
+}
+
+#lien-actif {
+  color: var(--retrodev-color2);
+}
+
+/* Mise en forme de la sidebar */
+#sidebar {
+  width: 230px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: 999;
+  /* background: var(--retrodev-color3); */
+  color: var(--retrodev-color4);
+  transition: all 0.3s;
+}
+
+#sidebar.active {
+  margin-left: -230px;
+}
+
+#sidebar .sidebar-header {
+  padding: 20px;
+  background: var(--retrodev-color3);
+}
+
+#logo {
+  max-width: 8rem;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+  box-shadow: none;
+  background: var(--retrodev-color3);
+
+}
+
+.blank {
+  width: 100%;
+  min-height: 8vh;
+  background: var(--retrodev-color3);
+}
+
+
+.components li {
+  background: var(--retrodev-color3);
+}
+
+.components li:hover {
+  background-color: #000;
+}
+
+.components a {
+  font-family: RetroGaming, sans-serif;
+  color: var(--retrodev-color4);
+  padding: 10px;
+  font-size: 1.2em;
+  display: block;
+}
+
+#sidebar-bottom {
+  background: var(--retrodev-color3);
+}
+
+.plan-mentions a {
+  padding: .6rem;
+}
+
+.plan-mentions a {
+  font-family: RetroGaming, sans-serif;
+  font-size: .9rem;
+  color: var(--retrodev-color4);
+  text-decoration: none;
+  margin: 0 auto;
+}
+
+
+.plan-mentions a:hover {
+  color: var(--retrodev-color2);
+}
+
+#mCSB_1_scrollbar_vertical.active {
+  display: none;
+}
+
+.ms-n3 {
+  margin-left: -2rem;
+}
+
+/* Mise en forme pour #content */
+#content {
+  width: calc(100% - 250px);
+  padding-left: 40px;
+  padding-top: 10px;
+  min-height: 100vh;
+  transition: all 0.3s;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#content.active {
+  width: 100%;
+}
+
+#mCSB_1_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Mediaqueries */
+@media (max-width: 768px) {
+  #sidebar {
+      margin-left: -250px;
+  }
+  #sidebar.active {
+      margin-left: 0;
+  }
+  #content {
+      width: 100%;
+  }
+  #content.active {
+      width: calc(100% - 250px);
+  }
+  #sidebarCollapse span {
+      display: none;
+  }
+  h1, h2, h3 {
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-bottom: 1.9rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin-top: 1.1rem;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    margin-top: 1.1rem;
+    margin-left: 3rem;
+  }
+  
+  p {
+    text-align: justify;
+    margin-left: .5rem;
+    margin-right: .5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .transparent {
+    padding: 0;
+  }
+  
+
+
+
+}
+
+
+
+/* Mise en forme icônes réseaux sociaux FontAwesome */
+  .fa-github, .fa-free-code-camp {
+    color: var(--retrodev-color4);
+    font-size: 2.3rem;
+}
+
+.fa-linkedin {
+    color: #0077B7;
+    font-size: 2.3rem;
+}
+
+.social i {
+  margin: .3rem;
+}
+
+/* Mise en forme corps de page */
+main {
+  width: auto;
+}
+
+.contenu {
+  max-width: 100%;
+  height: auto;
+  margin: 1.2rem auto;
+}
+
+.transparent {
+  background-color: rgba(247, 255, 247, .2);
+  border-radius: .6rem ;
+  padding: 1.5rem;
+
+}
+
+/* Mise en forme de la page accueil */
+#bienvenue,
+#propos {
+  margin-top: 2rem;
+}
+
+/* Mise en forme page ressources */
+.list-group-item {
+  background-color: rgba(247, 255, 247, 0);
+}
+
+#ressources li {
+  margin-left: 1.2rem;
+}
+
+#ressources a {
+  text-decoration: none;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+}
+
+#ressources a:hover {
+  color: var(--retrodev-color2);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Mise en forme de la page portfolio */
+/* Overlay */
+#portfolio-galerie {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#portfolio-galerie .row {
+  margin-bottom: 1rem;
+  align-items: center;
+  --bs-gutter-y: 1rem;
+}
+
+.title {
+  color: #1a1a1a;
+  text-align: center;
+  margin-bottom: 10px
+}
+
+.content {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden
+}
+
+.content .content-overlay {
+  background: rgba(0,0,0,0.7);
+  position: absolute;
+  height: 99%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  -moz-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s
+}
+
+.content:hover .content-overlay {
+  opacity: 1
+}
+
+.content-image {
+  width: 100%
+}
+
+img {
+  border-radius: 5px
+}
+
+.content-details {
+  position: absolute;
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s
+}
+
+.content:hover .content-details {
+  top: 50%;
+  left: 50%;
+  opacity: 1
+}
+
+.content-details h3 {
+  color: var(--retrodev-color4);
+  font-family: Montserrat, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  margin: 0;
+}
+
+.content-details p {
+  color: #fff;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.8em;
+  margin: 0;
+  text-align: center;
+}
+
+.fadeIn-bottom {
+  top: 80%
+}
+
+/* Mise en forme de la page retrogaming */
+#pinball li {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+
+#video-coinops iframe,
+#video-pinballArcade iframe {
+  padding: .5rem;
+  width: 100%;
+  min-height: 40vh;
+}
+
+#amazingslider-wrapper-1 {
+  min-width: 280px;
+  max-width: 1000px;
+}
+
+
+
+#retrogaming .border {
+  --bs-border-color : var(--retrodev-color1);
+} 
+
+/* Mise en forme de la page contact */
+#contact label {
+  font-family: RetroGaming, sans-serif;
+  margin-left: 1rem;
+}
+
+#contact img {
+  box-shadow: none;
+  margin: 1rem;
+  margin-left: 2rem;
+}
+
+#mail,
+#phone,
+#adresse {
+  margin-left: none;
+  font-family: RetroGaming, sans-serif;
+  display: inline-block;
+}
+
+#champ {
+  margin-left: 2rem;
+  font-family: RetroGaming, sans-serif;
+}
+
+#contact input {
+  display: block;
+}
+
+#contact p {
+  padding-left: 0;
+}
+
+#contact hr {
+  color: var(--retrodev-color3);
+  width: 80%;
+  margin: 3rem auto;
+}
+
+input,
+textarea {
+  margin-left: 1rem;
+}
+
+#contact iframe {
+  padding-bottom: 1.2rem;
+}
+
+.form-floating > label {
+  padding-top: 0;
+}
+
+/* Iframe map Google */
+.mapouter {
+  position:relative;
+  text-align:right;
+  max-height:550px;
+  max-width:550px;
+}
+
+.gmap_canvas {
+  overflow:hidden;
+  background:none!important;
+  max-height:550px;
+  max-width:550px;
+}
+
+#gmap_canvas {
+  height:550px;
+  width:550px;
+}
+
+/* Mise en place de la page plan du site */
+#plan ul {
+  margin-left: 2rem;
+  font-family: Montserrat, sans-serif;
+}
+
+.retrait {
+  margin-left: 5rem;
+}
+
+.retrait-2 {
+  margin-left: 7rem;
+}
+
+#plan a {
+  text-decoration: none;
+  color: #000;
+}
+
+#plan a:hover {
+  color: var(--retrodev-color2);
+  font-weight: 500;
+}
+

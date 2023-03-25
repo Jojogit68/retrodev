@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Comment pratiquer le rétrogaming ? Mes solutions">
+    <title>Retrogaming : Borne d'arcade et Pinball - Retro Dev</title>
+    
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- FontAweSome CSS CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="style/jquery.bxslider.css"> -->
+    <link rel="stylesheet" href="style/styles2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+    
+    
+    <!-- AmazingSlider -->
+    <script src="sliderengine/jquery.js"></script>
+    <script src="sliderengine/amazingslider.js"></script>
+    <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+    <script src="sliderengine/initslider-1.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="script/custom.js"></script>
+
+  </head>
+
+  <body>
+
+    <div class="wrapper vw-100 vh-100">
+      <!-- Sidebar  -->
+      <nav id="sidebar" class="d-flex flex-column justify-content-between">
+        <!-- Logo -->
+        <div class="sidebar-header">
+            <a href="index.html"><img id="logo" src="img/Logo-RetroDev-fond-sombre.svg"></a>
+        </div>
+
+        <div class="blank"></div>
+        <!-- Onglets de navigation -->
+        <ul class="d-flex flex-column text-center list-unstyled components mb-3">
+            <li><a href="ressources.html">Ressources Dev</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li id="onglet-actif"><a href="retrogaming.html">Retrogaming</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <div >
+          <div class="blank"></div>
+
+          <!-- Bouton CV -->
+          <div id="cv" class="text-center">
+              <a class="btn btn-site mb-5" target="_blank" href="CV_Jonathan_LEGRAND.pdf">Mon CV</a>
+          </div>
+          
+
+          <!-- Réseaux sociaux -->
+          <ul class="social d-flex justify-content-around mb-2">
+            <li><a href="https://github.com/Jojogit68" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/jonathan-legrand-887aa8246" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+              <li><a href="https://www.freecodecamp.org/JoIsCoding" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></li>
+          </ul>
+
+          <!-- Liens -->
+          <ul class="plan-mentions">
+              <li class="d-flex"><a href="plan.html">Plan du site</a></li>
+              <li class="d-flex"><a href="mentions.html">Mentions légales</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Contenu de la page (partie droite)  -->
+      <main id="content">
+        <!-- Bouton sandwich -->
+        <button type="button" id="sidebarCollapse" class="btn ms-n3 border border-dark border-4 sticky-top">
+            <i class="fas fa-align-justify"></i>
+        </button>
+                      
+        <div class="contenu transparent mr-5">
+          <h1 id="retrogaming" >Retrogaming</h1>
+          <p>Comment je fais pour m'adonner aux joies du rétrogaming ? <br>J'utilise entre autre <a href="#coinops">CoinOps</a> sur mon PC, Recalbox sur Raspberry pour ma TV, ma <a href="#maBorne">borne d'arcade</a>, <a href="#pinballArcade">The Pinball Arcade</a> sur PC et Switch <br>Un projet que j'aimerais faire prochainement : faire un <a href="#pincab">Pincab</a>.</p>
+
+          <p>Le rétrogaming est l'activité qui consiste à jouer à des jeux vidéo anciens ou à les collectionner. <br>Il concerne les jeux sortis sur les consoles de jeu, les micro-ordinateurs, les bornes d'arcades ou même les flippers (pinball).</p>
+
+          <p>En raison de l'histoire encore brève du jeu vidéo, le rétrogaming est une activité très récente. On désigne généralement les jeux vidéo « anciens », les jeux vidéo sortis pendant les quatre premières générations de consoles de jeux, soit depuis le début des années 1970 jusqu'au milieu des années 1990, période où les productions étaient très majoritairement en 2D. <br>Au sens large, le rétrogaming est le fait de jouer à des jeux vidéo antérieurs à la génération actuelle de consoles ou d'ordinateurs.</p>
+
+          <h2 id="arcade">Arcade</h2>
+          <p>Une borne d'arcade est un jeu vidéo payant dit « jeu vidéo d'arcade ». On les trouve habituellement dans des lieux ouverts au public comme les bars, les centres commerciaux, certains établissements de divertissement (bowlings, patinoires, cinémas multiplexe, etc.) ainsi que les salles d'arcade. <br>L'origine du nom provient des lieux où ces bornes étaient souvent installées, sous les arcades afin de rentabiliser l'espace. <br>Par extension dans le monde anglophone, une arcade désigne le lieu public en entier, qu'il comporte ou non des arcades. En français, on utilise le terme « salle d'arcade ».</p>
+
+          <h3 id="coinops">CoinOps</h3>
+          <p>CoinOps, c’est un package complet prêt à l’emploi pour une borne d’arcade. C'est l’équivalent gratuit et moderne des packs Hyperspin vendus par des vendeurs de bornes d’arcade maison peu scrupuleux.</p>
+
+          <p>Une borne d’arcade moderne c’est juste un pc, des milliers de jeux différents qui se lancent facilement depuis une interface graphique. <br>Du coup ça intéresse pas mal de monde, pas que les couteuses bornes d’arcades… C’est complètement gratuit et toléré.</p>
+
+          <p>Concrètement c’est une collection complète d’émulateurs, de roms, de bezels, de logos, d'extraits vidéos et jaquettes. Le tout joliment présenté, accessible et prêt a jouer dans un menu préconfiguré.</p>
+
+          <div id="video-coinops" class="row">
+            <div class="videoContent col-12 col-md-6">
+              <iframe class="img-fluid" src="https://www.youtube.com/embed/In1I3jVqG_o" title="CoinOPS Arcade Front End .Un sérieux concurrent à Hyperspin Test Pack CoinOPS Next PC d'Arcade Punks" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <div class="videoContent col-12 col-md-6">
+              <iframe class="img-fluid" src="https://www.youtube.com/embed/UHMPjxtNeaM" title="Présentation  Pack CoinOps Pinball Arcade 100 Tables de Flippers  + liens Téléchargement ..." allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <h3 id="maBorne">Ma borne d'arcade</h3>
+          <p>Et voilà ma borne d'arcade… Il manque toute la décoration !<br> C'est une chose que j'aurais dû faire depuis le début mais maintenant, avec les cours de la suite Adobe que je viens d'avoir, je n'ai plus d'excuse ! A suivre... <br>Voici quelques photos de la bête :</p>
+
+          <div class="amazingslider-wrapper d-block position-relative mx-auto my-4" id="amazingslider-wrapper-1">
+            <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+              <ul class="amazingslider-slides" style="display:none;">
+                  <li><img src="images/maBorne1.png" alt="Ma borne d&apos;arcade"  title="Ma borne d&apos;arcade" data-description="Vue d&apos;ensemble" />
+                  </li>
+                  <li><img src="images/maBorne2.png" alt="Ecran de selection de jeux"  title="Ecran de selection de jeux" data-description="Il y en a + de 400 sur ce système !" />
+                  </li>
+                  <li><img src="images/maBorne3.png" alt="Marvel Super Heroes VS Street Fighter"  title="Marvel Super Heroes VS Street Fighter" data-description="Ca va fritter !" />
+                  </li>
+                  <li><img src="images/maBorne4.png" alt="En plein action"  title="En plein action" data-description="Ryu est en train de ramasser..." />
+                  </li>
+                  <li><img src="images/maBorne5.png" alt="La face cachée"  title="La face cachée" data-description="Alimentaion, ampli, HP, écran et une Pandora Box ..." />
+                  </li>
+                  <li><img src="images/maBorne6.png" alt="Le panel"  title="Le panel" data-description="... reliée à tous les switchs grâce à une nappe Jamma et surtout beaucoup de fils !" />
+                  </li>
+              </ul>
+              <ul class="amazingslider-thumbnails" style="display:none;">
+                  <li><img src="images/maBorne1-tn.png" alt="Ma borne d&apos;arcade" title="Ma borne d&apos;arcade" /></li>
+                  <li><img src="images/maBorne2-tn.png" alt="Ecran de selection de jeux" title="Ecran de selection de jeux" /></li>
+                  <li><img src="images/maBorne3-tn.png" alt="Marvel Super Heroes VS Street Fighter" title="Marvel Super Heroes VS Street Fighter" /></li>
+                  <li><img src="images/maBorne4-tn.png" alt="En plein action" title="En plein action" /></li>
+                  <li><img src="images/maBorne5-tn.png" alt="La face cachée" title="La face cachée" /></li>
+                  <li><img src="images/maBorne6-tn.png" alt="Le panel" title="Le panel" /></li>
+              </ul>
+              <!-- <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive jQuery Image Slideshow">Responsive jQuery Image Slideshow</a></div> -->
+            </div>
+          </div>
+          
+          <div id="pinball">
+            <h2>Pinball</h2>
+            <h3 id="pinballArcade">The Pinball Arcade</h3>
+            <p>Je joue à The Pinball Arcade sur Pc ou sur Nintendo Switch.<br>The Pinball Arcade est un jeu vidéo de flipper développé par FarSight Studios. C'est une collection simulée de vraies tables de flipper sous licence de Gottlieb, Alvin G. and Company et Stern Pinball, une société qui détient également les droits des machines de Data East et Sega Pinball. Les jeux Williams et Bally ne sont plus disponibles depuis le 30 juin 2018 car FarSight avait perdu la licence des propriétés WMS qui est depuis passée à Zen Studios</p>
+            
+            <div id="video-pinballArcade" class="row justify-content-center">
+              <div class="videoContent col-12 col-md-6">
+                <iframe class="img-fluid" src="https://www.youtube.com/embed/ID1RWCYPsD4" title="Retour en arrière #26 - Pinball arcade : The Addams family  [PC]" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+
+            <h3 id="pincab">Pincab</h3>
+            <p>Mais au fait pourquoi le pincab existe et c'est quoi exactement ?</p>
+            <p>Depuis plusieurs années, des passionnés de flipper travaillent pour réaliser des flippers virtuels plus vrais que nature. Pourquoi ?</p>
+            <ul>
+              <li>- certains flippers deviennent introuvables</li>
+              <li>- les vieilles tables de notre jeunesse sont parfois en trop mauvais état pour être restaurées</li>
+              <li>- les délais des neufs sont interminables</li>
+              <li>- certaines licences n’existent pas en flipper alors que les tables numériques existent</li>
+              <li>- les prix des mécaniques dépassent allègrement les 10000 euros</li>
+              <li>- on se retrouve avec un seul jeu qu’on finit par connaître par cœur</li>
+              <li>- la maintenance est trop fastidieuse</li>
+            </ul>
+
+            <p>Le but était donc de répondre à ces problématiques en fabriquant une simulation numérique électronique s’approchant le plus possible d’un vrai flipper mécanique.<br>Un pincab est une “machinerie” assez complexe qui s'articule autour de la menuiserie, l'informatique, l'électronique et la programmation…<br>Comme dans un vrai flipper, il y a énormément de matériel qui le fait fonctionner et pour rendre le tout plus réaliste, on peut y ajouter des toys (accessoires électroniques et mécaniques simulant les mouvements physiques et les sons ).<br>Le but n’est pas d'avoir un simple jeu vidéo mais bien un produit qui fera ressentir les vraies sensations de flippers mécaniques que l’on arrive même plus à retrouver nulle part !</p>
+
+            <div id="pincab-galerie" class="row mx-auto">
+              <a href="img/pincab1.JPG" class="col-12 col-md-4 text-center">
+                <img src="img/pincab1-min.jpg" class="border border-4 rounded-4 m-1" alt="Dimensions d'un petit pincab">
+              </a>
+              <a href="img/pincab2.JPG" class="col-12 col-md-4 text-center">
+                <img src="img/pincab2-min.jpg" class="border border-4 rounded-4 m-1" alt="L'intérieur d'un pincab">
+              </a>
+              <a href="img/pincab3.JPG" class="col-12 col-md-4 text-center">
+                <img src="img/pincab3-min.jpg" class="border border-4 rounded-4 m-1" alt="Résultat final">
+              </a>
+            </div>            
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+  </body>
+</html>

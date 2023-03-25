@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ressources pour le développement web - Retro Dev</title>
+    <meta name="description" content="Ressources pour le Développement Web et Retrogaming.">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- FontAweSome CSS CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BxSlider CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/styles2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Custom JS -->
+    <script src="script/custom.js"></script>
+    <!-- BxSlider JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="wrapper d-flex flex-column justify-content-center w-100 h-100">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <!-- Logo -->
+            <div class="sidebar-header">
+                <a href="index.html"><img id="logo" src="img/Logo-RetroDev-fond-sombre.svg" class="img-fluid"></a>
+            </div>
+
+            <div class="blank"></div>
+            <!-- Onglets de navigation -->
+            <ul class="d-flex flex-column text-center list-unstyled components mb-3">
+                <li id="onglet-actif"><a href="ressources.html">Ressources Dev</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="retrogaming.html">Retrogaming</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex flex-column align-content-end">
+                <div class="blank"></div>
+
+                <!-- Bouton CV -->
+                <div id="cv" class="text-center">
+                    <a class="btn btn-site mb-5" target="_blank" href="CV_Jonathan_LEGRAND.pdf">Mon CV</a>
+                </div>
+                
+
+                <!-- Réseaux sociaux -->
+                <ul class="social d-flex justify-content-around mb-2">
+                    <li><a href="https://github.com/Jojogit68" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jonathan-legrand-887aa8246" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.freecodecamp.org/JoIsCoding" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></li>
+                </ul>
+
+                <!-- Liens -->
+                <ul class="plan-mentions">
+                    <li class="d-flex"><a href="plan.html">Plan du site</a></li>
+                    <li class="d-flex"><a href="mentions.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Contenu de la page (partie droite)  -->
+        <main id="content">
+        <!-- Bouton sandwich -->
+        <button type="button" id="sidebarCollapse" class="btn ms-n3 border border-dark border-4 sticky-top">
+            <i class="fas fa-align-justify"></i>
+        </button>
+                    
+            <div class="contenu transparent  flex-column justify-content-center mr-5">
+                <h1>Ressources Dev</h1>
+                <p>Vous trouverez sur cette page des ressources classées par thème pour le développement web en général :</p>
+                <div id="ressources" class="row mx-auto">
+                  <div id="doc" class="col-12 col-md-6">
+                    <h2>Documentation</h2>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="https://developer.mozilla.org/fr/" target="_blank">MDN Web Docs</a></li>
+                        <li class="list-group-item"><a href="https://devhints.io/" target="_blank">Devhints — TL;DR for developer documentation</a></li>
+                        <li class="list-group-item"><a href="https://devdocs.io/" target="_blank">DevDocs API Documentation</a></li>
+                        <li class="list-group-item"><a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp" target="_blank">How To Create Image Hover Overlay Effects</a></li>
+                        <li class="list-group-item"><a href="http://www.css-faciles.com/index.php" target="_blank">CSS faciles.com</a></li>
+                        <li class="list-group-item"><a href="https://css-tricks.com/guides/" target="_blank">Guides Archive - CSS-Tricks Archive - CSS-Tricks</a></li>
+                        <li class="list-group-item"><a href="https://getbootstrap.com/docs/5.2/getting-started/introduction/" target="_blank">Get started with Bootstrap · Bootstrap v5.2</a></li>
+                        <li class="list-group-item"><a href="http://cours.pise.info/algo/codage.htm" target="_blank">Cours d&#39;Algorithmique - Christophe Darmangeat</a></li>
+                        <li class="list-group-item"><a href="https://www.youtube.com/watch?v=nVbxK_L9XCU" target="_blank">Exporter des images d&#39;une maquettes - YouTube</a></li>
+                        <li class="list-group-item"><a href="https://beta.sayhello.so/" target="_blank">Hello: Search engine for instant answers</a></li>
+                        <li class="list-group-item"><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+                        <li class="list-group-item"><a href="https://www.codeur.com/tuto/css/unite-de-mesure-taille-px-em-rem/" target="_blank">px, %, em, rem... quelle unité de mesure utiliser en CSS ?</a></li>
+                        <li class="list-group-item"><a href="http://www.css-faciles.com/unites-css.php" target="_blank">Unités CSS et HTML</a></li>
+                      </ul>
+                  </div>
+    
+                  <div id="cheatSheet" class="col-12 col-md-6">
+                    <h2>Cheat Sheets</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://htmlcheatsheet.com/" target="_blank">HTML, CSS and more Cheat Sheet  - The best interactive cheat sheet</a></li>
+                      <li class="list-group-item"><a href="https://overapi.com/" target="_blank">Collection of Cheat Sheets | OverAPI.com</a></li>
+                      <li class="list-group-item"><a href="https://htmlreference.io/" target="_blank">HTML Reference - A free guide to all HTML elements and attributes.</a></li>
+                      <li class="list-group-item"><a href="https://docs.emmet.io/cheat-sheet" target="_blank">Emmet Cheat Sheet</a></li>
+                      <li class="list-group-item"><a href="https://jonitrythall.com/images/flexboxsheet.pdf" target="_blank">Flexboxsheet9 - flexboxsheet.pdf</a></li>
+                      <li class="list-group-item"><a href="http://www.ndpsoftware.com/git-cheatsheet.html#loc=remote_repo;" target="_blank">Git Cheatsheet</a></li>
+                      <li class="list-group-item"><a href="https://dev.to/devmount/a-cheatsheet-of-128-cheatsheets-for-developers-f4m" target="_blank">A CheatSheet of 128 CheatSheets for Developers - DEV Community</a></li>
+                      <li class="list-group-item"><a href="https://bootstrap-cheatsheet.themeselection.com/" target="_blank">Bootstrap 5 CheatSheet By ThemeSelection | Classes</a></li>
+                      <li class="list-group-item"><a href="http://cheatsheets.shecodes.io/bootstrap" target="_blank">Bootstrap Cheatsheet | SheCodes</a></li>
+                    </ul>
+                  </div>
+    
+                  <div id="outils" class="col-12 col-md-6">
+                    <h2>Boîte à outils</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://github.com/lvwzhen/tools#readme" target="_blank">Web Tools Online</a></li>
+                      <li class="list-group-item"><a href="https://webcode.tools/" target="_blank">The best tools for web development | Web Code Tools</a></li>
+                      <li class="list-group-item"><a href="https://mdigi.tools/all/" target="_blank">All Tools - mdigi.tools</a></li>
+                      <li class="list-group-item"><a href="https://github.com/bradtraversy/design-resources-for-developers" target="_blank">Design-resources-for-developers</a></li>
+                      <li class="list-group-item"><a href="https://www.html5xcss3.com/css3-tools-and-resources" target="_blank">Css3 Tools and Resources - Html5xCss3</a></li>
+                      <li class="list-group-item"><a href="https://www.alsacreations.com/page/schnapsum" target="_blank">Générateur Lorem Ipsum en alsacien - Alsacreations</a></li>
+                      <li class="list-group-item"><a href="https://www.mydevice.io" target="_blank">mydevice.io : web devices capabilities</a></li>
+                      <li class="list-group-item"><a href="https://validator.w3.org/" target="_blank">The W3C Markup Validation Service</a></li>
+                      <li class="list-group-item"><a href="https://caniuse.com/" target="_blank">Can I use... Support tables for HTML5, CSS3, etc</a></li>
+                      <li class="list-group-item"><a href="https://www.ninjaunits.com/converters/pixels/" target="_blank">Pixels conversion calculators - NinjaUnits</a></li>
+                      <li class="list-group-item"><a href="https://www.redacteur.com/compteur-de-mots/" target="_blank">Compteur de mots en ligne gratuit - Redacteur.com</a></li>
+                      <li class="list-group-item"><a href="https://www.outiref.fr/" target="_blank">Outiref : Audit SEO en ligne</a></li>
+                      <li class="list-group-item"><a href="https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.ccicampus.fr%2F&hl=fr&form_factor=desktop" target="_blank">PageSpeed Insights</a></li>
+                      <li class="list-group-item"><a href="https://www.whatsmydns.net/" target="_blank">DNS Propagation Checker - Global DNS Testing Tool</a></li>
+                      <li class="list-group-item"><a href="https://search.google.com/test/mobile-friendly" target="_blank">Test d&#39;optimisation mobile - Google Search Console</a></li>
+                      <li class="list-group-item"><a href="https://dnschecker.org/all-dns-records-of-domain.php" target="_blank">DNS Lookup - Check DNS Records</a></li>
+                      <li class="list-group-item"><a href="https://gtmetrix.com/" target="_blank">GTmetrix | Website Performance Testing and Monitoring</a></li>
+                      <li class="list-group-item"><a href="https://technicalseo.com/tools/" target="_blank">SEO Tools | TechnicalSEO.com</a></li>
+                      <li class="list-group-item"><a href="https://search.google.com/search-console/about" target="_blank">Google Search Console</a></li>
+                      <li class="list-group-item"><a href="https://checklists.opquast.com/fr/assurance-qualite-web/" target="_blank">Check-list Qualité Web : la checklist de référence</a></li>
+                      <li class="list-group-item"><a href="https://google-map-generator.com/" target="_blank">Google Map Generator - Maps Generator for Website (Free)</a></li>
+                      <li class="list-group-item"><a href="https://www.generateur-de-mentions-legales.com/" target="_blank">Générez vos mentions légales en 3 clics • 100% gratuit</a></li>
+                      <li class="list-group-item"><a href="https://www.cnil.fr/fr/reglement-europeen-protection-donnees" target="_blank">Le règlement général sur la protection des données - RGPD | CNIL</a></li>
+                      <li class="list-group-item"><a href="https://comet.discoveryeducation.com/index.html" target="_blank">Comet</a></li>
+                    </ul>
+                  </div>
+    
+                  <div id="image" class="col-12 col-md-6">
+                    <h2>Images</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://convertio.co/fr/png-svg" target="_blank">Convertir PNG en SVG (En ligne et Gratuit) — Convertio</a></li>
+                      <li class="list-group-item"><a href="https://www.resizepixel.com" target="_blank">Éditeur d&#39;images en ligne gratuit - ResizePixel</a></li>
+                      <li class="list-group-item"><a href="https://compressor.io" target="_blank">Compressor.io - optimize and compress JPEG photos and PNG images</a></li>
+                      <li class="list-group-item"><a href="https://www.pexels.com/fr-fr" target="_blank">Pexels.com</a></li>
+                      <li class="list-group-item"><a href="https://www.flaticon.com/fr" target="_blank">Icônes vectorielles et stickers - PNG, SVG, EPS, PSD et CSS</a></li>
+                      <li class="list-group-item"><a href="https://uxwing.com" target="_blank">Icons PNG and SVG Vector Free Download</a></li>
+                      <li class="list-group-item"><a href="https://tablericons.com" target="_blank">Tabler Icons - 1400+ Open source free SVG icons</a></li>
+                      <li class="list-group-item"><a href="https://icones8.fr" target="_blank">Icônes, illustrations clipart, photos &amp; musique gratuites</a></li>
+                      <li class="list-group-item"><a href="https://useanimations.com" target="_blank">A micro-animations library</a></li>
+                      <li class="list-group-item"><a href="https://www.svgrepo.com" target="_blank">SVG Repo - Free SVG Vectors and Icons</a></li>
+                      <li class="list-group-item"><a href="https://www.photopea.com" target="_blank">Photopea | Online Photo Editor</a></li>
+                      <li class="list-group-item"><a href="https://favicon.io/tutorials" target="_blank">Tutorials - favicon.io</a></li>
+                      <li class="list-group-item"><a href="https://www.pngwing.com" target="_blank">PNGWing - Exclusive png design images</a></li>
+                      <li class="list-group-item"><a href="https://www.dimensions.com" target="_blank">Dimensions | Database of Dimensioned Drawings</a></li>
+                      <li class="list-group-item"><a href="https://pocoloco.io" target="_blank">Pocoloco</a></li>
+                      <li class="list-group-item"><a href="https://coolbackgrounds.io" target="_blank">Cool Backgrounds</a></li>
+                      <li class="list-group-item"><a href="https://patternico.com" target="_blank">Seamless Pattern Maker - Create Unique Backgrounds For Free</a></li>
+                      <li class="list-group-item"><a href="https://www.transparenttextures.com" target="_blank">Transparent Textures</a></li>
+                      <li class="list-group-item"><a href="https://cooltext.com" target="_blank">Cool Text Graphics &amp; Logo Generator</a></li>
+                      <li class="list-group-item"><a href="https://doodad.dev/pattern-generator" target="_blank">Pattern Generator | Create Seamless, Royalty-Free Patterns</a></li>
+                      <li class="list-group-item"><a href="https://fr.pattern.monster" target="_blank">Pattern Monster - Générateur de motifs SVG</a></li>
+                      <li class="list-group-item"><a href="https://www.logogenie.fr" target="_blank">Création de logo en ligne, moteur de création de logo gratuit</a></li>
+                    </ul>
+                  </div>
+    
+                  <div id="couleur" class="col-12 col-md-6">
+                    <h2>Couleurs</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://coolors.co" target="_blank">Coolors - The super fast color palettes generator!</a></li>
+                      <li class="list-group-item"><a href="https://paletton.com" target="_blank">Paletton - The Color Scheme Designer</a></li>
+                      <li class="list-group-item"><a href="https://color.adobe.com/fr/create/color-wheel" target="_blank">Adobe Color : Roue chromatique</a></li>
+                      <li class="list-group-item"><a href="https://colorcurves.app" target="_blank">Color Curves</a></li>
+                      <li class="list-group-item"><a href="https://0to255.com" target="_blank">Color Variations &amp; Conversions</a></li>
+                      <li class="list-group-item"><a href="https://picular.co/" target="_blank">Picular</a></li>
+                      <li class="list-group-item"><a href="https://gradienta.io/editor" target="_blank">Gradienta Editor | Gradienta</a></li>
+                      <li class="list-group-item"><a href="https://gradientbuttons.colorion.co" target="_blank">Gradient buttons</a></li>
+                      <li class="list-group-item"><a href="https://uigradients.com" target="_blank">uiGradients - Beautiful colored gradients</a></li>
+                      <li class="list-group-item"><a href="https://www.grabient.com" target="_blank">Grabient</a></li>
+                      <li class="list-group-item"><a href="https://shadeswash.netlify.app" target="_blank">ShadeSwash - Shade Generator for Web Developers and Designers</a></li>
+                      <li class="list-group-item"><a href="https://www.colorhexa.com/" target="_blank">Hex Color</a></li>
+                      <li class="list-group-item"><a href="https://colorate.azurewebsites.net/fr/" target="_blank">Faites votre jeu de couleurs - Colorate</a></li>
+                      <li class="list-group-item"><a href="https://0to255.com" target="_blank">A Most Useful Color Picker | 0to255</a></li>
+                      <li class="list-group-item"><a href="https://www.whocanuse.com" target="_blank">WhoCanUse</a></li>
+                      <li class="list-group-item"><a href="https://colorable.jxnblk.com" target="_blank">Colorable</a></li>
+                      <li class="list-group-item"><a href="http://colormind.io/template" target="_blank">Colormind - Generate dashboard template colors</a></li>
+                      <li class="list-group-item"><a href="https://htmlcolorcodes.com/fr" target="_blank">Codes Couleur HTML</a></li>
+                      <li class="list-group-item"><a href="http://khroma.co/generator" target="_blank">Khroma - The AI color tool for designers</a></li>
+                      <li class="list-group-item"><a href="https://trianglify.io" target="_blank">Trianglify.io · Low Poly Pattern Generator</a></li>
+                    </ul>
+                  </div>
+    
+                  <div id="font" class="col-12 col-md-6">
+                    <h2>Fonts</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://fonts.google.com" target="_blank">Browse Fonts - Google Fonts</a></li>
+                      <li class="list-group-item"><a href="https://www.dafont.com/fr" target="_blank">DaFont - Polices à télécharger</a></li>
+                      <li class="list-group-item"><a href="https://fontjoy.com" target="_blank">Fontjoy - Generate font pairings in one click</a></li>
+                      <li class="list-group-item"><a href="https://www.fontpair.co" target="_blank">Fontpair - Free, beautiful fonts and font pairings curated just for you</a></li>
+                      <li class="list-group-item"><a href="https://grtcalculator.com" target="_blank">Golden Ratio Typography (GRT) Calculator</a></li>
+                      <li class="list-group-item"><a href="https://www.fontget.com" target="_blank">FREE Fonts Download | BEST Font Generator | FontGet</a></li>
+                      <li class="list-group-item"><a href="https://www.myfonts.com" target="_blank">WhatTheFont Font | My Fonts</a></li>
+                      <li class="list-group-item"><a href="https://www.fontsquirrel.com" target="_blank">Free Fonts! Legit Free &amp; Quality » Font Squirrel</a></li>
+                      <li class="list-group-item"><a href="https://www.fontspace.com" target="_blank">Free Fonts | 100 000+ Font Downloads | FontSpace</a></li>
+                      <li class="list-group-item"><a href="https://tiff.herokuapp.com" target="_blank">Tiff - a visual typeface diff tool.</a></li>
+                    </ul>
+                  </div>
+    
+                    
+                  <div id="inspiration" class="col-12 col-md-6">
+                    <h2>Inspiration</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://www.codeur.com/blog/10-generateurs-de-motifs-en-ligne" target="_blank">10 générateurs de motifs en ligne - Codeur Blog</a></li>
+                      <li class="list-group-item"><a href="https://app.usepanda.com/#/?module=panda5" target="_blank">Panda</a></li>
+                      <li class="list-group-item"><a href="https://dribbble.com" target="_blank">Dribbble - Discover the World’s Top Designers &amp; Creative Professionals</a></li>
+                      <li class="list-group-item"><a href="https://www.landingfolio.com" target="_blank">The Best Landing Page Design Inspiration, Templates and More | Landingfolio</a></li>
+                      <li class="list-group-item"><a href="https://brandingstyleguides.com" target="_blank">The branding style guidelines documents archive</a></li>
+                      <li class="list-group-item"><a href="https://stock.adobe.com/fr/photos?state=%7B%22ac%22%3A%22stock.adobe.com%22%7D" target="_blank">Stock Photos, images de photothèque et images libres de droits | Adobe Stock</a></li>
+                    </ul>
+                  </div>
+    
+    
+                  <div id="code" class="col-12 col-md-6">
+                    <h2>Code</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank">VS Code - Keyboard-shortcuts-windows.pdf</a></li>
+                      <li class="list-group-item"><a href="https://defkey.com/fr/visual-studio-code-windows-raccourcis-clavier#8709" target="_blank">Visual Studio Code (Windows) raccourcis clavier ‒ defkey</a></li>
+                      <li class="list-group-item"><a href="https://marketplace.visualstudio.com/vscode" target="_blank">Extensions for Visual Studio family of products | Visual Studio Marketplace</a></li>
+                      <li class="list-group-item"><a href="https://codepen.io/pen" target="_blank">Codepen</a></li>
+                      <li class="list-group-item"><a href="https://jsbin.com/metenisemo/edit?html,js,output" target="_blank">JS Bin - JS Bin</a></li>
+                      <li class="list-group-item"><a href="https://jsfiddle.net" target="_blank">JSFiddle - Code Playground</a></li>
+                      <li class="list-group-item"><a href="https://www.cleancss.com" target="_blank">Format and Minify Your Code Online</a></li>
+                    </ul>
+                  </div>
+    
+                  <div id="divers" class="col-12 col-md-6">
+                    <h2>Divers</h2>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="https://alexsoyes.com/podcasts-developpeurs/#artisan-developpeur-%25e2%25ad%2590" target="_blank">67 podcasts tech en français pour les développeurs – Alex so yes</a></li>
+                      <li class="list-group-item"><a href="https://uibundle.com" target="_blank">Free UI Kits, Fonts, Icons and more - UIBundle</a></li>
+                      <li class="list-group-item"><a href="https://www.webappers.com/category/inspiration" target="_blank">Inspiration - WebAppers | Web Resources | WebAppers</a></li>
+                      <li class="list-group-item"><a href="https://www.designnotes.co" target="_blank">Design notes</a></li>
+                      <li class="list-group-item"><a href="https://alvarotrigo.com/shadow-gradients/#how-to-use" target="_blank">CSS Shadow Gradients — Generator [Fast &amp; Easy]</a></li>
+                      <li class="list-group-item"><a href="https://github.com/topics/awesome" target="_blank">Awesome · GitHub Topics</a></li>
+                    </ul>
+                  </div>
+                </div>
+
+
+            </div>
+        </main>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="script/custom.js"></script>
+
+</body>
+
+</html>

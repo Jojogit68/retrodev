@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr-fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Retro Dev - Accueil du site et présentation</title>
+    <meta name="description" content="Ressources pour le Développement Web et Retrogaming.">
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- FontAweSome CSS CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- BxSlider CSS CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style/styles2.css">
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+
+    <!-- Custom JS -->
+    <script src="script/custom.js"></script>
+    <!-- BxSlider JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="wrapper d-flex flex-column justify-content-center w-100 h-100">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <!-- Logo -->
+            <div class="sidebar-header">
+                <a href="index.html"><img id="logo" src="img/Logo-RetroDev-fond-sombre.svg" class="img-fluid"></a>
+            </div>
+
+            <div class="blank"></div>
+            <!-- Onglets de navigation -->
+            <ul class="d-flex flex-column text-center list-unstyled components mb-3">
+                <li><a href="ressources.html">Ressources Dev</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="retrogaming.html">Retrogaming</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div class="d-flex flex-column align-content-end">
+                <div class="blank"></div>
+
+                <!-- Bouton CV -->
+                <div id="cv" class="text-center">
+                    <a class="btn btn-site mb-5" target="_blank" href="CV_Jonathan_LEGRAND.pdf">Mon CV</a>
+                </div>
+                
+
+                <!-- Réseaux sociaux -->
+                <ul class="social d-flex justify-content-around mb-2">
+                    <li><a href="https://github.com/Jojogit68" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jonathan-legrand-887aa8246" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.freecodecamp.org/JoIsCoding" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></li>
+                </ul>
+
+                <!-- Liens -->
+                <ul class="plan-mentions">
+                    <li class="d-flex"><a href="plan.html">Plan du site</a></li>
+                    <li class="d-flex"><a href="mentions.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Contenu de la page (partie droite)  -->
+        <main id="content">
+        <!-- Bouton sandwich -->
+        <button type="button" id="sidebarCollapse" class="btn ms-n3 border border-dark border-4 sticky-top">
+            <i class="fas fa-align-justify"></i>
+        </button>
+                    
+            <div class="contenu transparent d-flex flex-column justify-content-center mr-5">
+                <h1>Bienvenue sur <span class="orange">Retro</span> <span class="blue">Dev</span>,</h1>
+                <div class="texte justify-content-center" id="bienvenue">
+                    <p>Retrouvez sur Retro Dev les <a href="ressources.html">ressources</a> que je trouve utiles et que j'utilise  pour le développement web. Vous y aurez également un petit aperçu de mon travail dans mon <a href="portfolio.html">portfolio</a> ainsi qu'un peu de <a href="retrogaming.html">rétrogaming</a>...<br>Nostalgie, quand tu nous tiens !</p>
+                    <p>Vous êtes ici sur ma première création digitale qui me permet de mettre en pratique ce que j'ai appris durant les deux premiers mois de ma formation en développement web. <br>Je vous souhaite une bonne visite.</p>
+                </div>
+    
+                <div class="texte" id="propos">
+                    <h2>A propos de moi</h2>
+                    <p>Bonjour,<br><br> Je me présente, je m'appelle Jonathan Legrand et je suis actuellement en reconversion professionnelle : <br>J'apprends le développement web en suivant <a href="https://www.ccicampus.fr/bureautique-pao-informatique-web-cao-plm/developpeur-integrateur-web-php-oriente-objet-dwwm-temps" target="_blank">la formation de Développeur Intégrateur Web</a> au sein du <a href="https://www.ccicampus.fr/" target="_blank">CCI Campus Alsace</a> à Colmar. <br> Il s'agit d'une formation qualifiante bac +2 en vue d'obtenir le Titre Professionnel de Développeur Web et Web Mobile.</p>
+                    <p>Jusqu'à présent j'ai principalement travaillé dans le domaine de l'électronique en tant que technicien sur divers supports comme les machines à sous, la PS3 chez SONY ou encore des systèmes de détection incendie. <br>Vous pouvez en savoir plus sur mon parcours professionnel en consultant <a href="CV_Jonathan_LEGRAND.pdf" target="_blank">mon CV</a> ou en me retrouvant sur <a href="https://www.linkedin.com/in/jonathan-legrand-887aa8246" target="_blank"> linkedIn</a>.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <!-- jQuery Custom Scroller CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+
+    <!-- Custom JS -->
+    <script src="script/custom.js"></script>
+
+</body>
+
+</html>

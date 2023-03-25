@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script/three.r134.min.js"></script>
+    <script src="script/vanta.fog.min.js"></script>
+    <script>
+    VANTA.FOG({
+      el: "body",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      highlightColor: 0xf0a524,
+      midtoneColor: 0x4493de,
+      lowlightColor: 0x212128,
+      baseColor: 0xf7f7f7,
+      blurFactor: 0.52,
+      speed: 0.70,
+      zoom: 1.20
+    })
+    </script>
+
+</head>
+<body>
+    <div class="wrapper d-flex flex-column justify-content-center w-100 h-100">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <!-- Logo -->
+            <div class="sidebar-header flex-fill">
+                <a href="index.html"><img id="logo" src="img/Logo-RetroDev.svg" class="img-fluid" alt="logo du site"></a>
+                
+                <div class="blank"></div>
+            </div>
+            <!-- Onglets de navigation -->
+            <ul class="d-flex flex-column text-center list-unstyled components">
+                <li><a href="ressources.html">Ressources Dev</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="retrogaming.html">Retrogaming</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <div id="sidebar-bottom" class="d-flex flex-column justify-content-between flex-fill">
+                <div class="blank"></div>
+
+                <!-- Bouton CV -->
+                <div id="cv" class="text-center">
+                    <a class="btn btn-site mb-5" target="_blank" href="CV_Jonathan_LEGRAND.pdf">Mon CV</a>
+                </div>
+                
+
+                <!-- Réseaux sociaux -->
+                <ul class="social d-flex justify-content-around mb-2">
+                    <li><a href="https://github.com/Jojogit68" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/jonathan-legrand-887aa8246" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.freecodecamp.org/JoIsCoding" target="_blank"><i class="fa-brands fa-free-code-camp"></i></a></li>
+                </ul>
+
+                <!-- Liens -->
+                <ul class="plan-mentions">
+                    <li class="d-flex"><a href="plan.html">Plan du site</a></li>
+                    <li class="d-flex"><a href="mentions.html">Mentions légales</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Contenu de la page (partie droite)  -->
+        <main id="content">
+        <!-- Bouton sandwich -->
+        <button type="button" id="sidebarCollapse" class="btn ms-n3 border border-dark border-4 sticky-top">
+            <i class="fas fa-align-justify"></i>
+        </button>
+                    
+            <div class="contenu transparent d-flex flex-column justify-content-center mr-5">
+                <h1>Bienvenue sur <span class="orange">Retro</span> <span class="blue">Dev</span>,</h1>
+                <div class="texte justify-content-center" id="bienvenue">
+                    <p>Retrouvez sur Retro Dev les <a href="ressources.html">ressources</a> que je trouve utiles et que j'utilise  pour le développement web. Vous y aurez également un petit aperçu de mon travail dans mon <a href="portfolio.html">portfolio</a> ainsi qu'un peu de <a href="retrogaming.html">rétrogaming</a>...<br>Nostalgie, quand tu nous tiens !</p>
+                    <p>Vous êtes ici sur ma première création digitale qui me permet de mettre en pratique ce que j'ai appris durant les deux premiers mois de ma formation en développement web. <br>Je vous souhaite une bonne visite.</p>
+                </div>
+    
+                <div class="texte" id="propos">
+                    <h2>A propos de moi</h2>
+                    <p>Bonjour,<br><br> Je me présente, je m'appelle Jonathan Legrand et je suis actuellement en reconversion professionnelle : <br>J'apprends le développement web en suivant <a href="https://www.ccicampus.fr/bureautique-pao-informatique-web-cao-plm/developpeur-integrateur-web-php-oriente-objet-dwwm-temps" target="_blank">la formation de Développeur Intégrateur Web</a> au sein du <a href="https://www.ccicampus.fr/" target="_blank">CCI Campus Alsace</a> à Colmar. <br> Il s'agit d'une formation qualifiante bac +2 en vue d'obtenir le Titre Professionnel de Développeur Web et Web Mobile.</p>
+                    <p>Jusqu'à présent j'ai principalement travaillé dans le domaine de l'électronique en tant que technicien sur divers supports comme les machines à sous, la PS3 chez SONY ou encore des systèmes de détection incendie. <br>Vous pouvez en savoir plus sur mon parcours professionnel en consultant <a href="CV_Jonathan_LEGRAND.pdf" target="_blank">mon CV</a> ou en me retrouvant sur <a href="https://www.linkedin.com/in/jonathan-legrand-887aa8246" target="_blank"> linkedIn</a>.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+ 
+</body>
+</html>
