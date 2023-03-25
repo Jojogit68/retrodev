@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="logo-fond-clair" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.27 134.98">
+  <defs>
+    <style>
+      .cls-1 {
+        font-family: RetroGaming, 'Retro Gaming';
+        font-size: 21px;
+      }
+
+      .cls-2 {
+        fill: #028090;
+        letter-spacing: -.07em;
+      }
+
+      .cls-3 {
+        fill: #ff931e;
+        letter-spacing: -.08em;
+      }
+    </style>
+  </defs>
+  <g id="Logo_titre">
+    <text class="cls-1" transform="translate(0 129.25)"><tspan class="cls-3" x="0" y="0">Retro </tspan><tspan class="cls-2" x="73.59" y="0">Dev</tspan></text>
+  </g>
+</svg>
